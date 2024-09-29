@@ -76,6 +76,6 @@ async function getFeeds() {
 }
 
 
-await getFeeds();
-process.exit(0);
+export default getFeeds;
+
 
