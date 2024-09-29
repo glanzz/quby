@@ -1,5 +1,5 @@
 import { app } from '@azure/functions';
-import getFeeds from './feed-fetcher';
+import getFeeds from './feed-fetcher.js';
 
 
 app.timer('qubyreporter', {
