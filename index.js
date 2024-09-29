@@ -4,7 +4,8 @@ import getFeeds from './feed-fetcher.js';
 
 app.timer('qubyreporter', {
     schedule: '0 7 * * * *',
-    handler: (myTimer, context) => {
-      getFeeds();
+    handler: async (myTimer, context) => {
+     await getFeeds();
+     return {"message": "Job Run Successful !"}
     }
 });
